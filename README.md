@@ -9,6 +9,7 @@ This project involves creating a system to extract, process, and analyze text fr
 4. **Retrieve Documents**: Use hybrid retrieval techniques to find relevant documents based on queries.
 5. **Re-Rank Results**: Re-rank the retrieved documents based on relevance.
 6. **Answer Questions**: Use a language model to answer questions based on the extracted content.
+7.  **Milvus Vector Database Creation**: creating the vector databse using milvus storing the in vector format .
 
 ### Detailed Breakdown
 
@@ -67,20 +68,15 @@ This project involves creating a system to extract, process, and analyze text fr
 ### Setup Instructions
 
 1. **Install Dependencies**:
-   ```bash
    pip install -r requirements.txt
-   ```
 
-2. **Run the Components**:
-   - **Content Extraction**: `python content_extraction/content_extraction.py /path/to/your/file.pdf`
-   - **Data Chunking**: `python data_chunking/data_chunking.py "Extracted text here"`
-   - **RAPTOR Indexing**: `python raptor_indexing/raptor_indexing.py /path/to/chunks.npy /path/to/embeddings.npy`
-   - **Retrieval**: `python retrieval/retrieval.py "Your query" /path/to/documents.npy /path/to/embeddings.npy`
-   - **Re-Ranking**: `python re_ranking/re_ranking.py /path/to/query_embedding.npy /path/to/document_embeddings.npy /path/to/initial_results.npy`
-   - **Question Answering**: `python question_answering/question_answering.py "Your question" /path/to/context.txt`
+2. **Create the Milvus Vector Database:**:
+Install Milvus: Follow the Milvus installation guide to set up Milvus. You can use Docker for a quick setup.
+  
 
 ### Selected Textbooks
 
-- **Textbook 1**: [Title and Link](https://example.com/textbook1)
-- **Textbook 2**: [Title and Link](https://example.com/textbook2)
-- **Textbook 3**: [Title and Link](https://example.com/textbook3)
+- **Textbook 1**: RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval Paper
+- **Textbook 2**:MILVUS Documentation: https://milvus.io/docs/
+- **Textbook 3**:- Natural Language Processing with Python" (by Steven Bird, Ewan Klein, and Edward Loper)
+
