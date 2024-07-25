@@ -1,0 +1,8 @@
+fitz
+nltk
+sentence-transformers
+scikit-learn
+transformers
+rank-bm25
+pymupdf
+numpy
